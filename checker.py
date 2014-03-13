@@ -18,7 +18,7 @@ def test(email):
         domain = tail.split(u'.')
         if len(domain) > 2 or not domain[0] or not domain[1]:
             return False
-        if not domain[0].isalnum() or not domain[0].isalnum():
+        if not domain[0].isalnum() or not domain[1].isalnum():
             return False
         return True
 
